@@ -1,0 +1,1350 @@
+/* =========================
+   AJUSTES GENERALES
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #F4F0E8;
+    color: #171A17;
+    font-family: "Manrope", sans-serif;
+}
+
+
+
+/* =========================
+   ANNOUNCEMENT BAR
+========================= */
+
+.announcement-bar {
+    background-color: #19382D;
+    color: white;
+
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement-bar p {
+    margin: 0;
+
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: #F4F0E8;
+
+    border-bottom: 1px solid #D8D4CC;
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 88px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+
+
+/* IZQUIERDA Y DERECHA */
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+
+    width: 33%;
+}
+
+
+
+/* LINKS */
+
+.navbar a {
+    color: #171A17;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+
+/* NAVEGACIÓN DERECHA */
+
+.nav-right {
+    justify-content: flex-end;
+}
+
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-decoration: none;
+}
+
+
+
+.logo-name {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 34px;
+    font-weight: 500;
+
+    letter-spacing: 10px;
+
+    line-height: 1;
+}
+
+
+
+.logo-subtitle {
+    margin-top: 7px;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    display: flex;
+
+    min-height: 520px;
+}
+
+
+
+/* MITAD IZQUIERDA */
+
+.hero-content {
+    width: 42%;
+
+    padding: 70px 60px 70px 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+
+/* TEXTO PEQUEÑO SOBRE EL TÍTULO */
+
+.eyebrow {
+    margin: 0 0 28px;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+}
+
+
+
+/* TÍTULO PRINCIPAL */
+
+.hero h1 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 66px;
+    font-weight: 400;
+
+    line-height: 0.95;
+}
+
+
+
+/* TEXTO DESCRIPTIVO */
+
+.hero-description {
+    max-width: 420px;
+
+    margin: 30px 0;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.button {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 14px 22px;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+    letter-spacing: 0.8px;
+}
+
+
+
+.button-primary {
+    background-color: #19382D;
+
+    color: white;
+}
+
+
+
+/* =========================
+   IMAGEN HERO
+========================= */
+
+.hero-image {
+    width: 58%;
+
+    overflow: hidden;
+}
+
+
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+/* =========================
+   THE ESSENTIALS
+========================= */
+
+.essentials {
+    padding: 45px 55px;
+}
+
+
+
+/* TÍTULO DE LA SECCIÓN */
+
+.section-heading h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 36px;
+    font-weight: 500;
+}
+
+
+.section-heading p {
+    margin: 6px 0 20px;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================
+   GRILLA DE PRODUCTOS
+========================= */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+
+/* =========================
+   TARJETA DE PRODUCTO
+========================= */
+
+.product-card {
+    min-width: 0;
+}
+
+
+
+/* CONTENEDOR DE LA IMAGEN */
+
+.product-image {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+}
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+/* AJUSTE PARA PRODUCTOS MUY ALTOS */
+
+.product-img-tall {
+    transform: scale(0.96);
+}
+
+
+
+/* NÚMERO 01 / 02 / 03 / 04 */
+
+.product-number {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    z-index: 2;
+
+    font-size: 11px;
+}
+
+
+
+/* CORAZÓN */
+
+.wishlist-button {
+    position: absolute;
+
+    top: 10px;
+    right: 12px;
+
+    z-index: 2;
+
+    border: none;
+    background: transparent;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+
+/* INFORMACIÓN DEL PRODUCTO */
+
+.product-card h3 {
+    margin: 12px 0 2px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.product-card > p {
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.product-card .product-price {
+    margin-top: 4px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================
+   BRAND PHILOSOPHY
+========================= */
+
+.philosophy {
+    background-color: #19382D;
+    color: #F4F0E8;
+
+    padding: 48px 55px 45px;
+
+    display: block;
+}
+
+
+
+/* TÍTULO */
+
+.philosophy-heading {
+    width: 100%;
+}
+
+
+.philosophy-heading h2 {
+    margin: 0;
+
+    max-width: 450px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 48px;
+    font-weight: 400;
+
+    line-height: 0.95;
+}
+
+
+
+/* LOS TRES PRINCIPIOS */
+
+.philosophy-values {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+    margin-top: 28px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(244, 240, 232, 0.4);
+}
+
+
+
+/* CADA PRINCIPIO */
+
+.philosophy-item {
+    padding: 0;
+
+    border: none;
+}
+
+
+.philosophy-item h3 {
+    margin: 0 0 8px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.4px;
+}
+
+
+.philosophy-item p {
+    margin: 0;
+
+    max-width: 220px;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    color: rgba(244, 240, 232, 0.85);
+}
+
+
+
+/* =========================
+   SHOP BY SKIN CONCERN
+========================= */
+
+.skin-concerns {
+    padding: 55px;
+}
+
+
+
+/* TÍTULO */
+
+.skin-concerns h2 {
+    margin: 0 0 25px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 38px;
+    font-weight: 500;
+}
+
+
+
+/* GRILLA */
+
+.concern-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 18px;
+}
+
+
+
+/* CADA TARJETA */
+
+.concern-card {
+    color: #171A17;
+
+    text-decoration: none;
+
+    text-align: center;
+}
+
+
+
+/* IMAGEN */
+
+.concern-card img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+/* TEXTO */
+
+.concern-card span {
+    display: block;
+
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.3px;
+}
+
+
+
+/* =========================
+   FEATURED PRODUCT
+========================= */
+
+.featured-product {
+    display: flex;
+
+    width: 100%;
+
+    background-color: #F4F0E8;
+
+    min-height: 520px;
+}
+
+
+
+/* =========================
+   IMAGEN FEATURED PRODUCT
+========================= */
+
+.featured-image {
+    width: 58%;
+
+    overflow: hidden;
+}
+
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+
+/* =========================
+   INFORMACIÓN DEL PRODUCTO
+========================= */
+
+.featured-content {
+    width: 42%;
+
+    padding: 65px 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+
+/* TEXTO PEQUEÑO */
+
+.featured-content .eyebrow {
+    margin: 0 0 14px;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.4px;
+}
+
+
+
+/* TÍTULO */
+
+.featured-content h2 {
+    margin: 0 0 25px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 48px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+
+/* INGREDIENTES */
+
+.ingredient-list {
+    margin: 0 0 22px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.ingredient-list li {
+    margin-bottom: 5px;
+
+    font-size: 13px;
+}
+
+
+
+/* RATING */
+
+.rating {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    font-size: 12px;
+}
+
+
+
+/* PRECIO */
+
+.featured-price {
+    margin: 0 0 20px;
+
+    font-size: 18px;
+}
+
+
+
+/* BOTÓN */
+
+.button-secondary {
+    color: #171A17;
+
+    border: 1px solid #171A17;
+
+    background-color: transparent;
+}
+
+
+
+/* =========================
+   INGREDIENTS
+========================= */
+
+.ingredients {
+    padding: 60px 55px 70px;
+
+    background-color: #F4F0E8;
+
+    border-top: 1px solid #D8D4CC;
+}
+
+
+
+/* TÍTULO */
+
+.ingredients > h2 {
+    margin: 0 0 30px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 38px;
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+
+
+/* GRILLA DE INGREDIENTES */
+
+.ingredient-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 60px;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+}
+
+
+
+/* CADA INGREDIENTE */
+
+.ingredient {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    max-width: 380px;
+}
+
+
+
+/* IMAGEN */
+
+.ingredient img {
+    width: 135px;
+    height: 100px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+/* INFORMACIÓN */
+
+.ingredient h3 {
+    margin: 0 0 7px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+}
+
+
+.ingredient p {
+    margin: 0;
+
+    max-width: 170px;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+    padding: 55px;
+
+    background-color: #F4F0E8;
+
+    border-top: 1px solid #D8D4CC;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.newsletter-content {
+    width: 100%;
+    max-width: 750px;
+
+    text-align: center;
+}
+
+
+
+/* TÍTULO */
+
+.newsletter-content h2 {
+    margin: 0 0 12px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 42px;
+    font-weight: 500;
+}
+
+
+
+/* TEXTO */
+
+.newsletter-content > p {
+    margin: 0 0 28px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+
+/* FORMULARIO */
+
+.newsletter-form {
+    display: flex;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+
+
+/* INPUT */
+
+.newsletter-form input {
+    flex: 1;
+
+    height: 48px;
+
+    padding: 0 18px;
+
+    border: 1px solid #19382D;
+
+    background-color: transparent;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+}
+
+
+
+/* BOTÓN */
+
+.newsletter-form button {
+    height: 48px;
+
+    padding: 0 25px;
+
+    border: 1px solid #19382D;
+
+    background-color: #19382D;
+
+    color: #F4F0E8;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+
+.newsletter-form button span {
+    margin-left: 15px;
+}
+
+
+
+/* OCULTAR LABEL VISUALMENTE */
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #19382D;
+
+    color: #F4F0E8;
+
+    padding: 45px 55px 25px;
+}
+
+
+
+/* LINKS */
+
+.footer-links {
+    display: grid;
+
+    grid-template-columns: repeat(3, 150px);
+
+    gap: 70px;
+
+    margin-bottom: 35px;
+}
+
+
+.footer-links > div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+
+/* TÍTULOS */
+
+.footer-links h3 {
+    margin: 0 0 12px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+}
+
+
+
+/* LINKS */
+
+.footer-links a {
+    margin-bottom: 6px;
+
+    color: #F4F0E8;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    opacity: 0.85;
+}
+
+
+
+/* NARA GIGANTE */
+
+.footer-logo {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(90px, 17vw, 250px);
+
+    font-weight: 400;
+
+    letter-spacing: 0.18em;
+
+    line-height: 0.8;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+/* =========================
+   INTERACCIONES Y HOVER
+========================= */
+
+
+/* -------------------------
+   NAVBAR
+------------------------- */
+
+.nav-left a,
+.nav-right a {
+    position: relative;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* Línea animada debajo del link */
+
+.nav-left a::after,
+.nav-right a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 1px;
+
+    background-color: #19382D;
+
+    transition: width 0.3s ease;
+}
+
+
+
+/* -------------------------
+   BOTONES
+------------------------- */
+
+.button {
+    border: 1px solid transparent;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.button span {
+    transition: transform 0.3s ease;
+}
+
+
+
+/* -------------------------
+   PRODUCTOS
+------------------------- */
+
+.product-image img {
+    transition: transform 0.4s ease;
+}
+
+
+.product-card h3 {
+    transition: color 0.3s ease;
+}
+
+
+.wishlist-button {
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+
+
+/* -------------------------
+   SKIN CONCERN
+------------------------- */
+
+.concern-card img {
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+}
+
+
+.concern-card span {
+    transition:
+        letter-spacing 0.3s ease,
+        color 0.3s ease;
+}
+
+
+
+/* -------------------------
+   NEWSLETTER
+------------------------- */
+
+.newsletter-form input {
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.newsletter-form button {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+.footer-links a {
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+
+/* ========================================
+   HOVERS
+   Solo dispositivos que realmente
+   tienen mouse / hover
+======================================== */
+
+@media (hover: hover) and (pointer: fine) {
+
+
+    /* NAVBAR */
+
+    .nav-left a:hover,
+    .nav-right a:hover {
+        opacity: 0.65;
+    }
+
+
+    .nav-left a:hover::after,
+    .nav-right a:hover::after {
+        width: 100%;
+    }
+
+
+
+    /* BOTÓN PRINCIPAL */
+
+    .button-primary:hover {
+        background-color: transparent;
+
+        color: #19382D;
+
+        border-color: #19382D;
+
+        transform: translateY(-2px);
+    }
+
+
+
+    /* BOTÓN SECUNDARIO */
+
+    .button-secondary:hover {
+        background-color: #19382D;
+
+        color: #F4F0E8;
+
+        border-color: #19382D;
+
+        transform: translateY(-2px);
+    }
+
+
+
+    /* FLECHITA DE LOS BOTONES */
+
+    .button:hover span {
+        transform: translateX(5px);
+    }
+
+
+
+    /* PRODUCTOS NORMALES */
+
+    .product-card:hover .product-image img {
+        transform: scale(1.04);
+    }
+
+
+
+    /* SERUM Y CLEANSER:
+       parten de scale(0.96),
+       así que los llevamos solamente a 1 */
+
+    .product-card:hover .product-img-tall {
+        transform: scale(1);
+    }
+
+
+
+    .product-card:hover h3 {
+        color: #19382D;
+    }
+
+
+
+    /* CORAZÓN */
+
+    .wishlist-button:hover {
+        transform: scale(1.2);
+
+        color: #19382D;
+    }
+
+
+
+    /* SHOP BY SKIN CONCERN */
+
+    .concern-card:hover img {
+        transform: scale(1.025);
+
+        opacity: 0.9;
+    }
+
+
+    .concern-card:hover span {
+        letter-spacing: 1.8px;
+
+        color: #19382D;
+    }
+
+
+
+    /* NEWSLETTER */
+
+    .newsletter-form button:hover {
+        background-color: #F4F0E8;
+
+        color: #19382D;
+    }
+
+
+
+    /* FOOTER */
+
+    .footer-links a:hover {
+        opacity: 1;
+
+        transform: translateX(4px);
+    }
+
+}
+
+
+
+/* ========================================
+   FOCUS - TECLADO / ACCESIBILIDAD
+======================================== */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #758C78;
+
+    outline-offset: 3px;
+}
+
+
+
+/* INPUT DEL NEWSLETTER AL ESCRIBIR */
+
+.newsletter-form input:focus {
+    background-color: rgba(255, 255, 255, 0.35);
+
+    border-color: #19382D;
+}
